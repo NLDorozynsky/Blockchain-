@@ -1,9 +1,7 @@
 
 # Mini Proof-of-Work Blockchain — Python
 
-An educational, batteries-included mini blockchain to showcase the **UTXO** model, **ECDSA signatures**, a simple **mempool**, **coinbase rewards** with halvings, and **difficulty adjustment** targeting ~30s blocks.
-
-> ⚠️ This is for learning. Do **not** use in production or with real value.
+An educational, batteries-included mini blockchain to showcase the UTXO model, ECDSA signatures, a simple mempool, coinbase rewards with halvings, and difficulty adjustment targeting ~30s blocks.
 
 ## Features
 - Blocks: header (prev_hash, merkle_root, timestamp, target, nonce) + tx list
@@ -37,10 +35,10 @@ python -m minipow.cli mine --miner-address $ADDR
 ```
 
 ## Design parameters
-- Target block time: **30 seconds**
-- Difficulty adjust interval: **10 blocks**
-- Halving interval: **100 blocks**
-- Initial subsidy: **50** units
+- Target block time: 30 seconds
+- Difficulty adjust interval: 10 blocks
+- Halving interval: 100 blocks
+- Initial subsidy: 50 units
 - Address: Base58Check of `ripemd160(sha256(pubkey))`
 
 ## Test
