@@ -1,0 +1,16 @@
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "minipow"
+version = "0.1.0"
+description = "A tiny educational Proof-of-Work blockchain with UTXO, ECDSA signatures, mempool, and difficulty adjustment."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Eric Jones"}]
+dependencies = ["ecdsa>=0.18.0"]
+
+[project.scripts]
+minipow = "minipow.cli:main"
